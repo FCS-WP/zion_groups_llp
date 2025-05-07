@@ -1,0 +1,22 @@
+@import "../../css/_mixins.scss";
+@import "../../css/_theme-vars.scss";
+@import "css/_skin-vars.scss";
+
+#sb_instagram[data-shortcode-atts*="feedTwo"],
+#sb_instagram.feedTwo {
+	.sbi_follow_btn {
+		a {
+			color: var(--theme-color-text_dark) !important;
+			background-color: var(--theme-color-bg_color) !important;
+		}
+		.fa,
+		svg {
+			color: var(--theme-color-text_dark) !important;
+		}
+	}
+}
+
+.widget_instagram_type_default .widget_instagram_follow_link_wrap .widget_instagram_follow_link {
+	color: var(--theme-color-text_dark) !important;
+	background-color: var(--theme-color-bg_color) !important;
+}

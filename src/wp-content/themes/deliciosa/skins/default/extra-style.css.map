@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAOE;uCAAE;EACD,KAAK,EAAE,uCAAuC;EAC9C,gBAAgB,EAAE,sCAAsC;;AAEzD;;;yCACI;EACH,KAAK,EAAE,uCAAuC;;;AAKjD,+FAAgG;EAC/F,KAAK,EAAE,uCAAuC;EAC9C,gBAAgB,EAAE,sCAAsC",
+"sources": ["extra-style.scss"],
+"names": [],
+"file": "extra-style.css"
+}

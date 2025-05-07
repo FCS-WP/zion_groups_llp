@@ -1,0 +1,18 @@
+#sb_instagram[data-shortcode-atts*="feedTwo"] .sbi_follow_btn a,
+#sb_instagram.feedTwo .sbi_follow_btn a {
+  color: var(--theme-color-text_dark) !important;
+  background-color: var(--theme-color-bg_color) !important;
+}
+#sb_instagram[data-shortcode-atts*="feedTwo"] .sbi_follow_btn .fa,
+#sb_instagram[data-shortcode-atts*="feedTwo"] .sbi_follow_btn svg,
+#sb_instagram.feedTwo .sbi_follow_btn .fa,
+#sb_instagram.feedTwo .sbi_follow_btn svg {
+  color: var(--theme-color-text_dark) !important;
+}
+
+.widget_instagram_type_default .widget_instagram_follow_link_wrap .widget_instagram_follow_link {
+  color: var(--theme-color-text_dark) !important;
+  background-color: var(--theme-color-bg_color) !important;
+}
+
+/*# sourceMappingURL=extra-style.css.map */
