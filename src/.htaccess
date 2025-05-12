@@ -1,7 +1,11 @@
 # BEGIN WordPress
+
 # The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+
 # dynamically generated, and should only be modified via WordPress filters.
+
 # Any changes to the directives between these markers will be overwritten.
+
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
@@ -13,57 +17,6 @@ RewriteRule . /index.php [L]
 </IfModule>
 
 # END WordPress
-
-# BEGIN Security Header
-
-### 🔒 Force HTTPS
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteCond %{HTTPS} off
-  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-</IfModule>
-
-### 🧹 Prevent access to unnecessary files
-<IfModule mod_rewrite.c>
-  RewriteRule (?:readme|license|changelog|-config|-sample)\.(?:php|md|txt|html?) - [R=404,NC,L]
-</IfModule>
-
-### 🚫 Disable directory listing
-Options All -Indexes
-
-### 🔐 Security Headers
-<IfModule mod_headers.c>
-  # Hide server and PHP info
-  Header unset X-Powered-By
-  Header unset Server
-
-  # Clickjacking protection
-  Header set X-Frame-Options "SAMEORIGIN"
-
-  # HSTS - HTTPS enforcement for future visits
-  Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
-
-  # Basic XSS protection
-  Header set X-XSS-Protection "1; mode=block"
-
-  # Prevent MIME-type sniffing
-  Header set X-Content-Type-Options "nosniff"
-
-  # Remove obsolete header
-  Header unset X-UA-Compatible
-
-  # Modern referrer policy
-  Header set Referrer-Policy "strict-origin-when-cross-origin"
-
-  # Content Security Policy (basic, adjust as needed)
-#   Header set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self'; frame-ancestors 'self';"
-
-  # Restrictive permissions policy
-  Header set Permissions-Policy "accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), cross-origin-isolated=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(), geolocation=(), gyroscope=(), interest-cohort=(), layout-animations=(), legacy-image-formats=(), magnetometer=(), microphone=(), midi=(), navigation-override=(), oversized-images=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), sync-script=(), sync-xhr=(), usb=(), vertical-scroll=(), web-share=(), wake-lock=(), xr-spatial-tracking=()"
-</IfModule>
-
-# END Security Header
-
 # BEGIN PHP Settings
 php_value upload_max_filesize 20M
 php_value post_max_size 20M
