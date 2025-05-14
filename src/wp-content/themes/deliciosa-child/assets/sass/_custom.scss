@@ -1,0 +1,11 @@
+.elementor-field-type-select {
+    .select_container:after {
+        display: none !important;
+    }
+}
+.book-a-table-form {
+    button.elementor-button {
+        display: flex;
+        justify-content: center;
+    }
+}
