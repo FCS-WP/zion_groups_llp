@@ -85,6 +85,7 @@ class Modules_Manager {
 			'page-templates',
 			'gutenberg',
 			'wp-cli',
+			'wp-rest',
 			'safe-mode',
 			'ai',
 			'notifications',
@@ -94,6 +95,7 @@ class Modules_Manager {
 			'compatibility-tag',
 			'generator-tag',
 			'elements-color-picker',
+			'elementor-counter',
 			'shapes',
 			'favorites',
 			'admin-top-bar',
@@ -111,6 +113,7 @@ class Modules_Manager {
 			'image-loading-optimization',
 			'kit-elements-defaults',
 			'announcements',
+			'editor-app-bar',
 			'site-navigation',
 			'styleguide',
 			'element-cache',
@@ -120,6 +123,11 @@ class Modules_Manager {
 			'floating-buttons',
 			'content-sanitizer',
 			'editor-events',
+			'atomic-widgets',
+			'global-classes',
+			'wc-product-editor',
+			'checklist',
+			'cloud-library',
 		];
 	}
 
